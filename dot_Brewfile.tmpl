@@ -47,8 +47,11 @@ cask "1password-cli"
 cask "copilot-cli@prerelease"
 cask "font-monaspace"
 cask "font-symbols-only-nerd-font"
+cask "git-credential-manager"
+
+{{ if eq .chezmoi.os "darwin" -}}
 cask "ghostty"
 cask "gimp"
-cask "git-credential-manager"
 cask "hot"
 cask "podman-desktop"
+{{ end -}}

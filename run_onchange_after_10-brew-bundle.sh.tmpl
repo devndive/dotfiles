@@ -1,5 +1,5 @@
 #!/bin/sh
-# Brewfile hash: {{ include "dot_Brewfile" | sha256sum }}
+# Brewfile hash: {{ include "dot_Brewfile.tmpl" | sha256sum }}
 set -eu
 
 if command -v brew >/dev/null 2>&1; then
